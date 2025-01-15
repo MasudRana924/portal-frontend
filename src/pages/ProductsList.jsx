@@ -13,7 +13,7 @@ const ProductsList = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await fetch('http://localhost:8088/api/v1/dashboard');
+      const response = await fetch('https://portal-back-maxp.onrender.com/api/v1/dashboard');
       if (!response.ok) throw new Error('Failed to fetch dashboard data');
       const data = await response.json();
       setDashboardData(data);
